@@ -22,7 +22,7 @@ pipeline{
     stage('Artifact'){
       agent any
       steps{
-        sh 'upload war file to Artifactory'
+        echo "upload war file to Artifactory"
       }       
     }
     stage('Deploy'){
