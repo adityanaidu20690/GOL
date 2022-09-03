@@ -31,7 +31,7 @@ pipeline{
         sh '''rm -rf dockerimages
 mkdir dockerimages
 cd dockerimages
-cp /var/lib/jenkins/workspace/pipelineproject/gameoflife-web/target/gameoflife.war .
+cp /var/lib/jenkins/workspace/Jenkinsfileproject/gameoflife-web/target/gameoflife.war .
 touch Dockerfile
 cat<<EOT>> Dockerfile
 FROM tomcat:8.0.15-jre7
