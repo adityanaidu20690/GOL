@@ -42,7 +42,7 @@ EOT
 #sudo docker build -t tomcatserver .
 sudo docker build -t tomcatserve:$BUILD_NUMBER .
 #sudo docker run -itd --name tomcat -p 8888:8080 tomcatserver
-sudo docker run -itd --name tomcat$BUILD_NUMBER tomcatserve:$BUILD_NUMBER'''
+sudo docker run -itd --name tomcat$BUILD_NUMBER -p 8888:8080 tomcatserve:$BUILD_NUMBER'''
       }       
     }
   }
